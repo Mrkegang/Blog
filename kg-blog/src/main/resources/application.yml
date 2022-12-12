@@ -20,3 +20,8 @@ mybatis-plus:
       logic-delete-value: 1
       logic-not-delete-value: 0
       id-type: auto
+oss:
+  accessKey: 5HocQVY3h97d7Iyom1biAfnbjRAuFuQa5FL1Z-Eu
+  secretKey: k3rQC0q-Td2xTwiPoiWN8z6NYPPLNIVm4zQp0ZYS
+  bucket: kg-blog
+  bucketUrl: http://kg-blog-oss.kgstudy.cn

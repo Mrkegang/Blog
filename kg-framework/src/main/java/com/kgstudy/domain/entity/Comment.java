@@ -1,12 +1,10 @@
 package com.kgstudy.domain.entity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
+import lombok.Data;
+
 import java.io.Serializable;
 import java.util.Date;
-import lombok.Data;
 
 /**
  * 评论表
@@ -60,25 +58,25 @@ public class Comment implements Serializable {
     /**
      * 
      */
-    @TableField(value = "create_by")
+    @TableField(fill = FieldFill.INSERT)
     private Long createBy;
 
     /**
      * 
      */
-    @TableField(value = "create_time")
+    @TableField(fill = FieldFill.INSERT)
     private Date createTime;
 
     /**
      * 
      */
-    @TableField(value = "update_by")
+    @TableField(fill = FieldFill.INSERT_UPDATE)
     private Long updateBy;
 
     /**
      * 
      */
-    @TableField(value = "update_time")
+    @TableField(fill = FieldFill.INSERT_UPDATE)
     private Date updateTime;
 
     /**
